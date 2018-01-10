@@ -24,6 +24,12 @@
   </style>
 </head>
 <body>
+<%if(send){%>
+  <script>
+  alert("successfull registration");
+    // $('#success').click();
+  </script>
+<%}%>
 
 <section class="mbr-section mbr-section-hero mbr-section-full extHeader15 mbr-after-navbar" id="extHeader15-d" style="background-image: url(assets/images/mbr-1.jpg);">
 
@@ -60,18 +66,88 @@
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
-          <h4 class="modal-title">Warning!</h4>
+          <h4 class="modal-title">Welcome! Please Fill The Below Form</h4>
         </div>
         <div class="modal-body">
-          Your current session will expire in 5 minutes. Please Save your changes to continue your session, otherwise you will lose all unsaved data and your session will time out.
+          
+
+
+
+
+
+
+
+        <form action="/email" method="post">
+       <div class="col-lg-6">
+         <div class="form-group"> 
+            <label for="full_name_id" width="100%" >First Name</label>
+               <input type="text" width="100%"  id="" name="fname" placeholder="Enter First Name" required />
+             </div>
+             <br>
+              <div class="form-group"> 
+               <label for="full_name_id" width="100%" >Last Name</label>
+               <input type="text" width="100%"  id="" name="lname" placeholder="Enter Last Name" required />
+             </div>
+             <br>
+           <div class="form-group"> 
+            <label for="full_name_id" width="100%" >Email Id</label>
+            <input type="text" width="100%"  id="" name="email" placeholder="Enter Email" required />
+          </div>
+          <br>
+          <div class="form-group">  
+            <label for="full_name_id" width="100%" >Phone No.</label>
+            <input type="text" width="100%" id="" name="phone" placeholder="Enter Phone No." required />
+          </div>
+          <br>
+          <div class="form-group"> 
+            <label for="full_name_id" width="100%" >Message</label>
+            <input type="text" width="100%"  id="" name="message" placeholder="Enter Message" required />
+          </div>
+          <br>
+       </div>
+
+     
+
+
+<button type="submit" class="btn btn-primary">Submit</button>
+</form>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary">Save changes</button>
+          <button type="button" class="btn btn-default" id="dis" data-dismiss="modal">Close</button>
+          
         </div>
+        
       </div><!-- /.modal-content -->
     </div><!-- /.modal-dialog -->
   </div><!-- /.modal --> 
+
+
+
+
+
+
+  <!-- second Modal -->
+  <a href="#myMo" data-toggle="modal" id="success" style="display: none" class="btn btn-primary">Co</a>
+  <div class="modal fade" id="myMo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">x</button>
+          <h4 class="modal-title">login complete</h4>
+        </div>
+        <div class="modal-body">
+       You Have success fully login for this upcoming  event 
+
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+           <button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+        
+      </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+  </div><!-- /.modal --> 
+
                      
 </section>
 
