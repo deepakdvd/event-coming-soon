@@ -43,7 +43,7 @@ var mailOptions = {
   from: 'sumit@amoreentertainment.in',
   to: req.body.email,
   subject: 'You Have Successfully login for The Event',
-  html: '<h1></h1><br><h2>Name:"'+req.body.fname+''+req.body.lname+'"</h2><br>Email Id:<b>"'+req.body.email+'"</b><br>Contact No : <a href="tel:'+req.body.phone+'"></a><br>Message :<b>"'+req.body.message+'"<b/>'
+  html: '<h1>You Have Successfully login for The Event</h1><br><a href="www.amoreentertainment.in">amoreentertainment.in</a>'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
