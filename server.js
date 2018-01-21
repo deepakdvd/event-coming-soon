@@ -26,18 +26,21 @@ app.get('/',function(req,res){
 app.post('/email',function(req, res){
 
   var transporter = nodemailer.createTransport({
-   host: 'smtp.zoho.com',
+   host: 'mail.amoreentertainment.in',
     port: 465,
-    secure: true, 
+    secure: true,
+    tls: {
+        rejectUnauthorized: false
+    }, 
     //service: 'gmail',
   auth: {
-    user: 'deepakdesai19@picagroexporter.com',
-    pass: '*2468492383@sandvd'
+    user: 'sumit@amoreentertainment.in',
+    pass: '123456789'
   }
 });
 
 var mailOptions = {
-  from: 'deepakdesai19@picagroexporter.com',
+  from: 'sumit@amoreentertainment.in',
   to: req.body.email,
   subject: 'You Have Successfully login for The Event',
   html: '<h1></h1><br><h2>Name:"'+req.body.fname+''+req.body.lname+'"</h2><br>Email Id:<b>"'+req.body.email+'"</b><br>Contact No : <a href="tel:'+req.body.phone+'"></a><br>Message :<b>"'+req.body.message+'"<b/>'

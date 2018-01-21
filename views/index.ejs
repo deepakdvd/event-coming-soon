@@ -21,6 +21,12 @@
     .modal-backdrop {
       display: none;
     }
+    .extHeader15 input {
+      margin-bottom: 0;
+    }
+    .form-group {
+      margin-bottom: 0;
+    }
   </style>
 </head>
 <body>
@@ -42,22 +48,43 @@
                         <div class="mbr-figure image-size" style="width: 20%; font-size: 50px;">
                           <img src="logo.jpg" style="width: 200px;height: 200px; margin: 0 auto;margin-top: 50px;">
                         </div>
-                        <div class="span-title">
-                            <div class="span-title">
-                              <!-- <span class="mbr-section-title display-2 text-center pad-r">OUR </span>
-                              <span class="mbr-section-title display-2 element typedextHeader15-d" adress="typedextHeader15-d" firstel="EVENT" secondel="PRODUCT LAUNCH" thirdel="NEW APP" typespeed="60"></span><br> -->
-                              <span class="mbr-section-title display-2 text-center pad-r" style="text-transform: uppercase;font-size: 42px">we are currently working on an awesome new site</span>             
-                            </div>
-                        </div>
+                        <div class="col-lg-12 text-center contact-info">
+                           <p ><a href="mailto:sumit@amoreentertainment.in" style="color:white;font-size: 20px;" target="_top">Email: sumit@amoreentertainment.in</a></p>
+                           <p style="color:white;font-size: 20px;">Contact: <a href="tel:+91 9867665052" style="color:white;font-size: 15px;">+91 9867665052</a></p>
+                      </div>
 
-                        <div class="mbr-section-text lead text-center">
-                            <p><span style="font-style: normal;">Event Management I Logistic Management I Artist Management I Celebrity Endorsement <br> Production Resourcing I Public Relation I Corporate Activation I Conceptualizing & Planning</span></p>
-                            <p><span style="font-style: normal;font-weight: 600">India | Overseas</span></p>
-                        </div>
-                    </div>
-
-                    <div class="form_wraper" data-form-type="formoid" style="text-align: center;">
-                      <a href="#myModal" data-toggle="modal" style="border: 1px solid white;margin-right: 0px;" class="btn btn-primary">Connect</a>
+                        <form action="/email" method="post" style="width: 100%; text-align: left;">
+          <div class="col-lg-4 col-lg-push-4">
+            <div class="form-group"> 
+              <!-- <label for="full_name_id" width="100%" >First Name</label> -->
+              <input type="text" class="form-control" width="100%"  id="" name="fname" placeholder="Enter First Name" required />
+            </div>
+          <br>
+          <div class="form-group"> 
+            <!-- <label for="full_name_id" width="100%" >Last Name</label> -->
+            <input type="text" class="form-control" width="100%"  id="" name="lname" placeholder="Enter Last Name" required />
+          </div>
+          <br>
+          <div class="form-group"> 
+            <!-- <label for="full_name_id" width="100%" >Email Id</label> -->
+            <input type="text" class="form-control" width="100%"  id="" name="email" placeholder="Enter Email" required />
+          </div>
+          <br>
+          <div class="form-group">  
+            <!-- <label for="full_name_id" width="100%" >Phone No.</label> -->
+            <input type="tel" class="form-control" width="100%" id="" name="phone" placeholder="Enter Phone No." required />
+          </div>
+          <br>
+          <div class="form-group"> 
+            <!-- <label for="full_name_id" width="100%" >Message</label> -->
+            <input type="text" class="form-control" width="100%"  id="" name="message" placeholder="Enter Message" required />
+          </div>
+          <br>
+          </div>
+          <div class="col-lg-12 text-center">
+            <button type="submit" class="btn btn-primary">Submit</button>
+          </div>
+        </form>
                     </div>
 
 <!-- Modal -->
@@ -69,42 +96,8 @@
         <h4 class="modal-title">Welcome! Please Fill The Below Form</h4>
       </div>
       <div class="modal-body">
-        <form action="/email" method="post" style="width: 100%; text-align: left;">
-          <div class="col-lg-12">
-            <div class="form-group"> 
-              <label for="full_name_id" width="100%" >First Name</label>
-              <input type="text" class="form-control" width="100%"  id="" name="fname" placeholder="Enter First Name" required />
-            </div>
-          <br>
-          <div class="form-group"> 
-            <label for="full_name_id" width="100%" >Last Name</label>
-            <input type="text" class="form-control" width="100%"  id="" name="lname" placeholder="Enter Last Name" required />
-          </div>
-          <br>
-          <div class="form-group"> 
-            <label for="full_name_id" width="100%" >Email Id</label>
-            <input type="text" class="form-control" width="100%"  id="" name="email" placeholder="Enter Email" required />
-          </div>
-          <br>
-          <div class="form-group">  
-            <label for="full_name_id" width="100%" >Phone No.</label>
-            <input type="tel" class="form-control" width="100%" id="" name="phone" placeholder="Enter Phone No." required />
-          </div>
-          <br>
-          <div class="form-group"> 
-            <label for="full_name_id" width="100%" >Message</label>
-            <input type="text" class="form-control" width="100%"  id="" name="message" placeholder="Enter Message" required />
-          </div>
-          <br>
-          </div>
-          <div class="col-lg-12 text-center">
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </div>
-        </form>
+        
       </div>
-     <!--  <div class="modal-footer">
-        <button type="button" class="btn btn-default" id="dis" data-dismiss="modal">Close</button>
-      </div> -->
     </div><!-- /.modal-content -->
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal --> 
