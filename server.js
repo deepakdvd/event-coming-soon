@@ -51,7 +51,7 @@ transporter.sendMail(mailOptions, function(error, info){
     return console.log(error);
   } else {
     console.log('Email sent: ' + info.response);
-    res.redirect('/?resp='+true);
+    res.redirect('http://amoreentertainment.in');
   }
 });
 
