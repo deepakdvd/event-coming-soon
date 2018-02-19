@@ -59,9 +59,6 @@ transporter.sendMail(mailOptions, function(error, info){
 });
 
 
-
-
-
 http.listen(app.get('port'), function(){
   console.log('listening on *:'+app.get('port'));
 });
