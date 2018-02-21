@@ -35,7 +35,7 @@ app.post('/email',function(req, res){
     //service: 'gmail',
   auth: {
     user: 'sumit@amoreentertainment.in',
-    pass: '123456789'
+    pass: 'sumit@123'
   }
 });
 
