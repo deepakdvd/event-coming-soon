@@ -55,6 +55,24 @@ transporter.sendMail(mailOptions, function(error, info){
   }
 });
 
+//this is currently added for sending event holder mail
+var mailOptions1 = {
+  from: 'sumit@amoreentertainment.in',
+  to: 'sumit@amoreentertainment.in',
+  subject: req.body.email+'Have Successfully login for The Event',
+  html: '<h1>'+req.body.email+' Have Successfully login for The Event</h1><br><a href="www.amoreentertainment.in">amoreentertainment.in</a>'
+};
+
+transporter.sendMail(mailOptions1, function(error, info){
+  if (error) {
+    return console.log(error);
+  } else {
+    console.log('Email sent: ' + info.response);
+  
+  }
+});
+//end here
+
 
 });
 
