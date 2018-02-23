@@ -58,9 +58,9 @@ transporter.sendMail(mailOptions, function(error, info){
 //this is currently added for sending event holder mail
 var mailOptions1 = {
   from: 'sumit@amoreentertainment.in',
-  to: 'rahulthakare273@gmail.com',
+  to: 'sumit@amoreentertainment.in',
   subject: req.body.email+'Have Successfully login for The Event',
-  html: '<h1>Email:'+req.body.email+' Have Successfully login for The Event</h1><br><a href="www.amoreentertainment.in">amoreentertainment.in</a><br>Name:'+req.body.fname+req.body.lname+'<br>Phone:'+req.body.phone+'<br>Message:'+req.body.message;
+  html: '<h1>Email:'+req.body.email+' Have Successfully login for The Event</h1><br><a href="www.amoreentertainment.in">amoreentertainment.in</a><br>Name:'+req.body.fname+req.body.lname+'<br>Phone:'+req.body.phone+'<br>Message:'+req.body.message
 };
 
 transporter.sendMail(mailOptions1, function(error, info){
