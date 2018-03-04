@@ -43,7 +43,7 @@ var mailOptions = {
   from: 'sumit@amoreentertainment.in',
   to: req.body.email,
   subject: 'You Have Successfully login for The Event',
-  html: '<h1>THANKS FOR CONTACTING A MORE ENTERTAINMENT</h1><br><h1>WE WILL GET IN TOUCH WITH YOU SHORTLY<br><br>Regards,<br>Sumit Parasrampuriya<br><p>+91 9867665052</p>'
+  html: '<h1>THANKS FOR CONTACTING AMORE ENTERTAINMENT</h1><br><h1>WE WILL GET IN TOUCH WITH YOU SHORTLY<br><br>Regards,<br>Sumit Parasrampuriya<br><p>+91 9867665052</p>'
 };
 
 transporter.sendMail(mailOptions, function(error, info){
